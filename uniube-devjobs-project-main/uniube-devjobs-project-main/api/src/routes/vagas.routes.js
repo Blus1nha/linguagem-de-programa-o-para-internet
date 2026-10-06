@@ -1,0 +1,12 @@
+const {Router} = require('express');
+const router = Router();
+
+const vagasMock = [
+    {id: 1, titulo: 'Dev Frontend React', empresa: 'TechSimulada', tipo: 'remota'},
+]
+
+router.get('/', (req, res) => {
+    res.json(vagasMock);
+});
+
+module.exports = router;
